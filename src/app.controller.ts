@@ -25,7 +25,7 @@ export class AppController {
   @Get()
   async sendMessage() {
 
-    const bot = new Telegraf("5334252288:AAEGXhEiNhoHmIGfh5Z0SGBJXfNBUHUYZms");
+    const bot = new Telegraf("YOUR TELEGRAM BOT TOKEN");
 
     bot.on("message", (c) => {
       console.log("Asd");
