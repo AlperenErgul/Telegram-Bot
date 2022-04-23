@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { SequelizeModule } from "@nestjs/sequelize";
 import { MessageEntity } from "./entity/message.entity";
 
@@ -15,6 +14,6 @@ import { MessageEntity } from "./entity/message.entity";
     SequelizeModule.forFeature([MessageEntity])
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [],
 })
 export class AppModule {}
